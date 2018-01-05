@@ -1,10 +1,10 @@
 <?php
 
-namespace worstinme\widgets\controllers;
+namespace balitrip\widgets\controllers;
 
 use Yii;
-use worstinme\widgets\models\Widgets;
-use worstinme\widgets\models\WidgetsSearch;
+use balitrip\widgets\models\Widgets;
+use balitrip\widgets\models\WidgetsSearch;
 use yii\web\NotFoundHttpException;
 
 class DefaultController extends \yii\web\Controller
@@ -37,7 +37,7 @@ class DefaultController extends \yii\web\Controller
 
     public function render($view, $params = [])
     {
-        \worstinme\widgets\assets\AdminAsset::register($this->view);
+        \balitrip\widgets\assets\AdminAsset::register($this->view);
         return parent::render($view, $params);
     }
 

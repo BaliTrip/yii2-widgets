@@ -1,6 +1,6 @@
 <?php
 
-namespace worstinme\widgets\widgets\models;
+namespace balitrip\widgets\widgets\models;
 
 use Yii;
 
@@ -29,7 +29,7 @@ class YandexMap extends \yii\base\Model
     }
 
     public static function getFormView() {
-        return '@worstinme/widgets/widgets/forms/yandex-map';
+        return '@balitrip/widgets/widgets/forms/yandex-map';
     }
 
     public function rules()

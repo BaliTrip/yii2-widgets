@@ -1,6 +1,6 @@
 <?php
 
-namespace worstinme\widgets\widgets\models;
+namespace balitrip\widgets\widgets\models;
 
 use Yii;
 
@@ -17,7 +17,7 @@ class Html extends \yii\base\Model
     }
 
     public static function getFormView() {
-        return '@worstinme/widgets/widgets/forms/html';
+        return '@balitrip/widgets/widgets/forms/html';
     }
 
     public function rules()

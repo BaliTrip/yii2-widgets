@@ -1,13 +1,13 @@
 <?php
 
-namespace worstinme\widgets;
+namespace balitrip\widgets;
 
 use Yii;
 use yii\helpers\FileHelper;
 use yii\helpers\Json;
-use worstinme\widgets\models\Widgets;
-use worstinme\widgets\models\WidgetsSearch;
-use worstinme\widgets\helpers\ShortcodeHelper;
+use balitrip\widgets\models\Widgets;
+use balitrip\widgets\models\WidgetsSearch;
+use balitrip\widgets\helpers\ShortcodeHelper;
 
 class Component extends \yii\base\Component { 
 
@@ -33,8 +33,8 @@ class Component extends \yii\base\Component {
 	public function callbacks() {
 		
 		return array_merge([
-			'uk-slideshow'=>['worstinme\uikit\widgets\Slideshow','widget'],
-			'widget'=>['worstinme\zoo\widgets\Widget','widget'],
+			'uk-slideshow'=>['balitrip\uikit\widgets\Slideshow','widget'],
+			'widget'=>['balitrip\zoo\widgets\Widget','widget'],
 			//'anothershortcode'=>function($attrs, $content, $tag){},
 		],$this->callbacks);
 	}
@@ -45,7 +45,7 @@ class Component extends \yii\base\Component {
 
 		if (!empty($position)) {
 
-			$key = 'worstinme_widgets_'.$position.'_'.Yii::$app->language;
+			$key = 'balitrip_widgets_'.$position.'_'.Yii::$app->language;
 
 			//Yii::$app->cache->flush();
 
@@ -60,7 +60,7 @@ class Component extends \yii\base\Component {
 					->all();
 
 				$data = \yii\helpers\ArrayHelper::toArray($widgets, [
-				    'worstinme\widgets\models\Widgets' => [
+				    'balitrip\widgets\models\Widgets' => [
 				        'callback'=>'widget',
 				        'bounds' => function ($model) {
 				        	$bounds = ['only'=>[],'except'=>[]];
@@ -131,10 +131,10 @@ class Component extends \yii\base\Component {
 
 	        $widgets = [];
 
-	        $paths = ['worstinme\widgets\widgets\models'=>'@worstinme/widgets/widgets/models'];
+	        $paths = ['balitrip\widgets\widgets\models'=>'@balitrip/widgets/widgets/models'];
 
 	        if (Yii::$app->has('zoo')) {
-	        	$paths['worstinme\zoo\widgets\models'] = '@worstinme/zoo/widgets/models';
+	        	$paths['balitrip\zoo\widgets\models'] = '@balitrip/zoo/widgets/models';
 	        }
 
 	        if ($this->customWidgetsPath !== null && $this->customWidgetsNamespace !== null) {
@@ -167,10 +167,10 @@ class Component extends \yii\base\Component {
 
 	        $widgets = [];
 
-	        $paths = ['worstinme\widgets\widgets'=>'@worstinme/widgets/widgets'];
+	        $paths = ['balitrip\widgets\widgets'=>'@balitrip/widgets/widgets'];
 
 	        if (Yii::$app->has('zoo')) {
-	        	$paths['worstinme\zoo\widgets'] = '@worstinme/zoo/widgets';
+	        	$paths['balitrip\zoo\widgets'] = '@balitrip/zoo/widgets';
 	        }
 
 	        if ($this->customWidgetsPath !== null && $this->customWidgetsNamespace !== null) {

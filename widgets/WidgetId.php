@@ -1,8 +1,8 @@
 <?php
 
-namespace worstinme\widgets\widgets;
+namespace balitrip\widgets\widgets;
 
-use worstinme\widgets\models\Widgets;
+use balitrip\widgets\models\Widgets;
 use Yii;
 
 class WidgetId extends \yii\base\Widget

@@ -1,6 +1,6 @@
 <?php
 
-namespace worstinme\widgets\models;
+namespace balitrip\widgets\models;
 
 use Yii;
 

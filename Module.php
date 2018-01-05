@@ -1,6 +1,6 @@
 <?php
 
-namespace worstinme\widgets; 
+namespace balitrip\widgets; 
 
 use Yii;
 
@@ -9,7 +9,7 @@ class Module extends \yii\base\Module
     /**
      * @inheritdoc
      */
-    public $controllerNamespace = 'worstinme\widgets\controllers';
+    public $controllerNamespace = 'balitrip\widgets\controllers';
 
     /**
      * @inheritdoc
@@ -26,7 +26,7 @@ class Module extends \yii\base\Module
         Yii::$app->i18n->translations['widgets'] = [
             'class' => 'yii\i18n\PhpMessageSource',
             'sourceLanguage' => 'en-GB',
-            'basePath' => '@worstinme/widgets/messages',
+            'basePath' => '@balitrip/widgets/messages',
         ];
     }
 }

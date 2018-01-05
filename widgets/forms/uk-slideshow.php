@@ -37,7 +37,7 @@ $_reload = Yii::$app->request->post('reload');
 	<?php $key = -1; foreach ($model->slides as $key => $value): ?>
 	<div class="uk-panel uk-margin-top row">
 		<div class="uk-float-right">
-			<?=$this->render('@worstinme/widgets/views/default/_row-buttons',['key'=>$key])?>
+			<?=$this->render('@balitrip/widgets/views/default/_row-buttons',['key'=>$key])?>
 		</div>
 
 		<?=\mihaildev\ckeditor\CKEditor::widget([
@@ -65,7 +65,7 @@ $_reload = Yii::$app->request->post('reload');
 	<?php if (!count($model->slides) || ($_reload !== null && $_type === null)) : ?>
 	<div class="uk-panel uk-margin-top">
 		<div class="uk-float-right">
-			<?=$this->render('@worstinme/widgets/views/default/_row-buttons',['key'=>$key,'last'=>true])?>
+			<?=$this->render('@balitrip/widgets/views/default/_row-buttons',['key'=>$key,'last'=>true])?>
 		</div>
 		<?=\mihaildev\ckeditor\CKEditor::widget([
 			'model'=>$model,

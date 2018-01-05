@@ -2,9 +2,9 @@
 
 use yii\helpers\Html;
 use yii\helpers\Url;
-use worstinme\uikit\widgets\GridView;
-use worstinme\uikit\widgets\ListView;
-use worstinme\uikit\ActiveForm;
+use balitrip\uikit\widgets\GridView;
+use balitrip\uikit\widgets\ListView;
+use balitrip\uikit\ActiveForm;
 
 /* @var $this yii\web\View */
 /* @var $dataProvider yii\data\ActiveDataProvider */
@@ -107,7 +107,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'itemView' => '_item',
         ])?>
 
-        <?php  \worstinme\uikit\assets\Nestable::register($this);
+        <?php  \balitrip\uikit\assets\Nestable::register($this);
 
         $url = Url::to(['sort']);
 

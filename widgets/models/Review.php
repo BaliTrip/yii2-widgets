@@ -1,6 +1,6 @@
 <?php
 
-namespace worstinme\widgets\widgets\models;
+namespace balitrip\widgets\widgets\models;
 
 use Yii;
 
@@ -20,7 +20,7 @@ class Review extends \yii\base\Model
     }
 
     public static function getFormView() {
-        return '@worstinme/zoo/widgets/forms/review';
+        return '@balitrip/zoo/widgets/forms/review';
     }
 
     public function rules()

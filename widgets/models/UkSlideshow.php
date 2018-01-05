@@ -1,6 +1,6 @@
 <?php
 
-namespace worstinme\widgets\widgets\models;
+namespace balitrip\widgets\widgets\models;
 
 use Yii;
 
@@ -22,7 +22,7 @@ class UkSlideshow extends \yii\base\Model
     }
 
     public static function getFormView() {
-        return '@worstinme/widgets/widgets/forms/uk-slideshow';
+        return '@balitrip/widgets/widgets/forms/uk-slideshow';
     }
 
     public function getSlides() {

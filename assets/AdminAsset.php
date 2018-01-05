@@ -1,12 +1,12 @@
 <?php
 
-namespace worstinme\widgets\assets;
+namespace balitrip\widgets\assets;
 
 use yii\web\AssetBundle;
 
 class AdminAsset extends AssetBundle
 {
-    public $sourcePath = '@worstinme/widgets/assets';
+    public $sourcePath = '@balitrip/widgets/assets';
 
     public $css = [
         'css'=>'css/admin.css',
@@ -17,7 +17,7 @@ class AdminAsset extends AssetBundle
     ];
 
     public $depends = [
-        'worstinme\uikit\UikitAsset',
+        'balitrip\uikit\UikitAsset',
     ];
 
     public $publishOptions = [

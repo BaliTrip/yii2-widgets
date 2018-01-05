@@ -1,6 +1,6 @@
 <?php
 
-namespace worstinme\widgets\widgets;
+namespace balitrip\widgets\widgets;
 
 use Yii;
 use yii\helpers\Html;

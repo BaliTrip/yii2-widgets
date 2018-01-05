@@ -3,7 +3,7 @@
 use yii\helpers\Html;
 use yii\helpers\Json;
 
-\worstinme\uikit\assets\Slideshow::register($this);
+\balitrip\uikit\assets\Slideshow::register($this);
 
 ?>
 <div class="uk-slidenav-position" data-uk-slideshow='<?=Json::encode($options)?>' data-uk-check-display>
